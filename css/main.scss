@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.navbar {
+    background: rgb(214, 233, 255);
+    padding-top: 20px;
+    
+    .container {
+        display: flex;
+        justify-content: space-between;
+        
+        
+        
+        height: 100%;
+        align-items: center;
+
+        img {
+            
+            width: 165px;
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            li {
+                a {
+                    text-decoration: none;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: rgb(16, 32, 53);
+                    padding: 5px 30px;
+                    background: white;
+                    border-radius: 30px;
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+    }
+}
+
+.hero {
+    background: rgb(214, 233, 255);
+    
+    .container{
+        display: block;
+        
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+        
+
+        
+
+        p {
+            padding-bottom: 20px;
+        }
+
+        button {
+            color: white;
+            font-weight: 600;
+            background: rgb(249, 17, 156);
+            border: none;
+            padding: 10px 40px;
+            border-radius: 30px;
+            cursor: pointer;
+            
+        }
+
+        img {
+            width: 100%;
+            padding-top: 30px;
+        }
+    }
+}
+
+.grow-together {
+    
+
+    .container {
+        display: block;
+        text-align: center;
+
+        .feature {
+
+            background: rgb(255, 255, 255);
+            border-radius: 20px;
+            padding: 40px;
+            margin-top: 40px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.042), 0 6px 18px 0 rgba(0, 0, 0, 0.042);
+
+            h2 {
+                padding-bottom: 10px;
+            }
+
+            p {
+                padding: 10px;
+                
+            }
+        }
+
+        
+
+        img {
+            max-width: 60%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}
+
+
+.footer {
+    background:  hsl(209, 63%, 19%); 
+    margin-top: 100px;
+    
+}
+.box-content {
+    display: block;
+    padding: 80px 20px 20px 20px;
+    flex-basis: 50%;
+
+    img {
+        max-width: 140px;
+        padding-bottom: 35px;
+        
+    }
+
+        .info {
+       margin-top: 0px;
+       margin-bottom: 30px;
+       color: white;
+       font-size: 12px;
+
+       .map {
+        padding-bottom: 10px;
+        i {
+            padding-right: 10px;
+        }
+       }
+
+       .phone {
+        padding-bottom: 10px;
+        i {
+            padding-right: 10px;
+        }
+       }
+
+       .email {
+        
+        i {
+            padding-right: 10px;
+        }
+       }
+
+       .sub-nav {
+        list-style: none;
+        
+        li {
+            padding-bottom: 5px;
+        }
+       }
+
+       .social {
+            i {
+                padding-right: 20px;
+
+                &:hover {
+                    color: purple;
+                   }
+            }
+       }
+
+       .fa-brands {
+        font-size: 20px;
+    }
+       
+    }
+}
+
+.copyright {
+    text-align: center;
+    color: white;
+    font-size: 10px;
+}
+
+.attribution {
+    color: white;
+    font-size: 10px;
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:780px) {
+
+   .hero {
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+
+        h2 {
+            padding-top: 40px;
+            padding-bottom: 30px;
+            padding-right: 30px;
+        }
+
+        p {
+            padding-bottom: 30px;
+            padding-right: 30px;
+        }
+        
+        img {
+            width: 45%;
+            
+        }
+    
+       }
+   }
+
+    .feature {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .box-content {
+        display: flex;
+        
+        justify-content: space-between;
+
+        .footer-logo {
+            display: none;
+        }
+    }
+
+    .container {
+
+        .red {
+            width: 420px;
+            height: 200px;
+            border-radius: 15px;
+            background: white;
+            position: relative;
+            left: 30%;
+            bottom: 100px;
+            text-align: center;
+            padding-top: 60px;
+            justify-self: center;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.042), 0 6px 18px 0 rgba(0, 0, 0, 0.042);
+        }
+    }
+}
